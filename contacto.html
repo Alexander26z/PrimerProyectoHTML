@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Recetas de Cocina Costa Rica</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(119, 237, 209), rgb(245, 245, 245));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #60dfd0;
+            text-align: center;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Las principales recetas de cocina de Costa Rica.</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="recetas.html">Recetas</a></li>
+                <li><a href="audiovisuales.html">AudioVisuales</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <div class="contenedor-formulario">
+    <form >
+        <label for="nombre">Nombre: </label>
+        <input type="text"id="nombre" name="nombre" placeholder="Escribí aquí tu nombre" required minlength="3">
+        <label for="apellido">Apellido: </label>
+        <input type="text"id="apellido" name="apellido" placeholder="Escribí aquí tu apellido"required minlength="3">
+        <label for="email">Email: </label>
+        <input type="text"id="email" name="email" placeholder="Escribí aquí tu email"required>
+        <label for="pais">País: </label>
+        <select name="pais" id="pais">
+            <option value="Argentina">Argentina</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Costa Rica">Costa Rica</option>
+            <option value="España">España</option>
+            <option value="Chile">Chile</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="Perú">Perú</option>
+            <option value="Panamá">Panamá</option>
+        </select>
+        <label for="comentario">Comentario</label>
+        <textarea name="comentario" id="comentario" placeholder="Escribí aquí tu comentario"></textarea>
+        <label for="motivo">Motivo de contacto: </label>
+        <input type="radio" id="motivo" name="motivo"><i>Soy fan</i>
+        <input type="radio" id="motivo" name="motivo"><i>Quiero una remera</i>
+        <input type="radio" id="motivo" name="motivo"><i>Comerciales</i>
+        <input type="radio" id="motivo" name="motivo"><i>Reclamos</i>
+        <input type="submit" value="Enviar">
+    </form>
+   </div>
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024</p>
+    </footer>
+
+</body>
+
+</html>
